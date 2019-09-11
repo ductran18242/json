@@ -85,7 +85,7 @@ static void fbuffer_free(FBuffer *fb)
     if (fb->ptr) ruby_xfree(fb->ptr);
     ruby_xfree(fb);
 }
-
+/*fbuffer_clear*/
 static void fbuffer_clear(FBuffer *fb)
 {
     fb->len = 0;
